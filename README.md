@@ -34,6 +34,7 @@ Table of Contents
 
   I. Adding the maynard layer to your build
  II. Running the maynard desktop
+III. Testing
 
 I. Adding the maynard layer to your build
 =========================================
@@ -65,8 +66,16 @@ Add needed layers to conf/bblayers.conf
 
   bitbake core-image-maynard
   
-  [copy to boot media/boot target system/login]
 
-  mkdir /tmp/root-maynard
-  chmod 0700 /tmp/root/maynard
-  export XDG_
+III. Testing
+============
+
+a) Raspberry Pi
+===============
+
+core-image-maynard runs on the Raspberry Pi [14/06/2014]
+
+To build Wayland/Weston for RPi you will need this patch-set against 
+meta-raspberrypi master [c3410fe3, 14/06/2014]
+
+https://review.gherzan.ro:8443/#/c/107/
